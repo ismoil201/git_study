@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.gitstudy.JUnit5.CalculatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-29T16:00:57" hostname="iseumeoil-ui-MacBookPro.local" time="0.157">
+  <properties/>
+  <testcase name="[1] a=-12, b=30" classname="com.example.gitstudy.JUnit5.CalculatorTest" time="0.126"/>
+  <testcase name="[2] a=32, b=-12" classname="com.example.gitstudy.JUnit5.CalculatorTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
