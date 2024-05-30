@@ -14,28 +14,26 @@ class CalculatorTest {
 
     @ParameterizedTest
     @MethodSource("numberProvider")
-    @DisplayName("Butun sonlar qo'shi testi")
-    void sum(int a, int b, int excepted){
+    @DisplayName("haqiqiy sonlar boyicha test")
+    void sum(int a, int b , int excepted){
 
         //given
-        Calculator calculator = new Calculator();
+        Calculator calculator  =  new Calculator();
 
         //when
         int actual = calculator.sum(a, b);
 
+
         //then
-        assertEquals(excepted, actual);
-    }
+        assertEquals(actual,excepted);
 
+    }
     static Stream<Arguments> numberProvider(){
-        return Stream.of(
-                Arguments.arguments(10,23,33),
-                Arguments.arguments(13,44,57),
-                Arguments.arguments(0,0,0)
-        );
+        return Stream.of(Arguments.arguments(1, 1 ,2),
+                        Arguments.arguments(3,4,7)
+                );
 
     }
-
 
     @ParameterizedTest
     @MethodSource("numberProviderForException")
